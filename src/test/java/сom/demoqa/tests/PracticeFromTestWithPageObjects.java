@@ -1,13 +1,7 @@
 package сom.demoqa.tests;
 
-import com.codeborne.selenide.Selenide;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import сom.demoqa.pages.PracticeFormPage;
-
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeFromTestWithPageObjects extends TestBase {
 
@@ -17,6 +11,7 @@ public class PracticeFromTestWithPageObjects extends TestBase {
     void successTest(){
 
         practiceFormPage.openPage()
+                .footerRemove()
                 .setFirstName("Angelina")
                 .setLastName("Savina")
                 .setUserEmail("angelinaa@mail.com")
@@ -27,6 +22,7 @@ public class PracticeFromTestWithPageObjects extends TestBase {
                 .setHobbie()
                 .setPicture("imageTest.png")
                 .setAddress("Cyprus is current address")
+                .setState()
                 .setCity()
                 .submit()
                 .verifyModalDialogWindow()

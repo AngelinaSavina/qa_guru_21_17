@@ -23,14 +23,19 @@ public class PracticeFormPage {
             hobbiesWrapper = $("#hobbiesWrapper").$(byText("Reading")),
             picture = $("#uploadPicture"),
             currentAddressInput = $("#currentAddress"),
-            stateCityWrapper = $("#stateCity-wrapper").$(byText("Delhi")),
+            stateCityWrapper = $("#stateCity-wrapper"),
+            stateWrapper = $("#state"),
             cityWrapper = $("#city"),
-            submitButton = $("#submit"),
-            checkTable = $(".table-responsive");
-
+            submitButton = $("#submit");
 
     public PracticeFormPage openPage () {
         open("/automation-practice-form");
+
+        return this;
+    }
+
+    public PracticeFormPage footerRemove () {
+
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
 
@@ -96,11 +101,16 @@ public class PracticeFormPage {
 
         return this;
     }
-    public PracticeFormPage setCity () {
-        stateCityWrapper.click();
+
+    public PracticeFormPage setState () {
+        stateWrapper.click();
         stateCityWrapper.$(byText("NCR")).click();
+
+        return this;
+    }
+    public PracticeFormPage setCity () {
         cityWrapper.click();
-        stateCityWrapper.click();
+        stateCityWrapper.$(byText("Delhi")).click();
 
         return this;
     }
