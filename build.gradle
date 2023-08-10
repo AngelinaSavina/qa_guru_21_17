@@ -25,9 +25,7 @@ tasks.withType(JavaCompile) {
 //    useJUnitPlatform()
 //}
 task qa_guru_20_12(type: Test) {
-    useJUnitPlatform{
-        includeTags("registration")
-    }
+    useJUnitPlatform()
 }
 
 allure {
