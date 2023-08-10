@@ -1,9 +1,0 @@
-[2023-08-10T16:06:42.748Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308030102/pubads_impl.js 9:270197 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
-[2023-08-10T16:06:42.777Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308030102/pubads_impl.js 9:270197 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
-[2023-08-10T16:06:42.779Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308030102/pubads_impl.js 9:270197 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
-[2023-08-10T16:06:42.780Z] [WARNING] https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308030102/pubads_impl.js 9:270197 "[GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead."
-[2023-08-10T16:06:42.797Z] [SEVERE] https://cdn-ima.33across.com/ob.js 1:40874 "33Across Lexicon ID Mappings Provider: PID not found"
-[2023-08-10T16:06:42.861Z] [SEVERE] https://tags.crwdcntrl.net/lt/c/16589/sync.min.js 0:10302 "SYNC.JS: Aborting because TCF string was expected but not present."
-[2023-08-10T16:06:42.861Z] [SEVERE] https://tags.crwdcntrl.net/lt/c/16589/sync.min.js 0:10302 "SYNC.JS: Aborting because no consent was present on the request or stored server-side"
-[2023-08-10T16:06:42.862Z] [SEVERE] https://tags.crwdcntrl.net/lt/c/16589/sync.min.js 0:10302 "SYNC.JS: Aborting due to above errors."
-[2023-08-10T16:06:43.015Z] [SEVERE] https://cdn.ad.plus/player/adplus.js 412:423 Uncaught TypeError: c(...).setup is not a function
