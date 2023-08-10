@@ -24,9 +24,17 @@ tasks.withType(JavaCompile) {
 //task qa_guru_20_12(withType(Test)){
 //    useJUnitPlatform()
 //}
-task qa_guru_20_12(type: Test) {
+//task qa_guru_20_12(type: Test) {
+//    useJUnitPlatform()
+//}
+test {
     useJUnitPlatform()
 }
+
+task qa_guru_20_12(type: Test) {
+//    useJUnitPlatform{
+//        includeTags("simple")
+    }
 
 allure {
     report {
