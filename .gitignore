@@ -30,6 +30,8 @@
 .gradle/
 allure-results/
 gradle/
+gradlew/
+settings.gradle
 build/
 bin/
 out/
