@@ -21,8 +21,13 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-tasks.withType(Test){
-    useJUnitPlatform()
+//task qa_guru_20_12(withType(Test)){
+//    useJUnitPlatform()
+//}
+task qa_guru_20_12(type: Test) {
+    useJUnitPlatform{
+        includeTags("registration")
+    }
 }
 
 allure {
