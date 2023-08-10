@@ -21,9 +21,8 @@ public class TestBase {
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
-        //Configuration.browser = CHROME;
-        //Configuration.holdBrowserOpen = true;
-
+        Configuration.browser = CHROME;
+        Configuration.holdBrowserOpen = true;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
@@ -47,7 +46,7 @@ public class TestBase {
         Attach.browserConsoleLogs();
         Attach.addVideo();
 
-        closeWebDriver();
+        //closeWebDriver();
     }
     @AfterAll
     public static void afterAll() {
