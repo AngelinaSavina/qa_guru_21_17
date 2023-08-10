@@ -26,13 +26,9 @@
 
 # Project gen files
 .idea
-.allure/
-.gradle/
-allure-results/
-gradle/
+gradle/wrapper
 gradlew/
 settings.gradle
-build/
 bin/
 out/
 logs/
