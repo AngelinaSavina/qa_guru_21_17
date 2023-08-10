@@ -1,5 +1,7 @@
 package сom.demoqa.tests;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import сom.demoqa.pages.PracticeFormPage;
@@ -13,7 +15,7 @@ public class PracticeFromTest extends TestBase {
 
     @Test
     void successTest() {
-
+        SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Open the page", () -> {
             practiceFormPage.openPage();

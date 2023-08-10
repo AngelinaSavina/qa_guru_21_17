@@ -17,6 +17,8 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
 
+//    SelenideLogger.addListener("allure", new AllureSelenide());
+
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
