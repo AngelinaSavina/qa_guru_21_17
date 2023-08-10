@@ -26,9 +26,8 @@
 
 # Project gen files
 .idea
+.gradle/
 gradle/wrapper
-gradlew/
-settings.gradle
 bin/
 out/
 logs/
