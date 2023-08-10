@@ -21,7 +21,7 @@ public class TestBase {
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
-        Configuration.browser = CHROME;
+        //Configuration.browser = CHROME;
         //Configuration.holdBrowserOpen = true;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -39,10 +39,6 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
-    @AfterAll
-    public static void afterAll() {
-        closeWebDriver();
-    }
 
     @AfterEach
     void addAttachments() {
@@ -51,6 +47,10 @@ public class TestBase {
         Attach.browserConsoleLogs();
         Attach.addVideo();
 
+        closeWebDriver();
+    }
+    @AfterAll
+    public static void afterAll() {
         closeWebDriver();
     }
 
