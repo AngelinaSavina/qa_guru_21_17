@@ -25,10 +25,10 @@ test {
 }
 
 task qa_guru_20_12(type: Test) {
-//    useJUnitPlatform{
-//        includeTags("simple")
+    useJUnitPlatform {
+        includeTags("simple")
     }
-
+}
 allure {
     report {
         version.set("2.17.3") //версия Allure Report (https://github.com/allure-framework/allure2)

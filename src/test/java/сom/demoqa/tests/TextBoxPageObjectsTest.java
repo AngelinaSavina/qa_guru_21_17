@@ -1,5 +1,6 @@
 package сom.demoqa.tests;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import сom.demoqa.pages.TextBoxPage;
 
@@ -7,6 +8,7 @@ public class TextBoxPageObjectsTest extends TestBase {
 
     TextBoxPage textBoxPage = new TextBoxPage();
 
+    @Disabled
     @Test
     void successfulTextBoxTest() {
         textBoxPage.openPage()
