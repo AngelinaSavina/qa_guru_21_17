@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="сom.demoqa.tests.PracticeFromTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-10T17:08:05" hostname="AngelinavinaMBP" time="26.758">
+  <properties/>
+  <testcase name="successTest()" classname="сom.demoqa.tests.PracticeFromTest" time="26.758"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=100.0.4896.60 Platform=linux
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.14.0
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.9.1 build revision: eb2032df7f
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on linux (7fb131a71359e5f708a036fca1b471ed)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=RemoteWebDriver: chrome on linux (7fb131a71359e5f708a036fca1b471ed),proxy=null,downloadsFolder=null] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Browser and proxy will stay open due to holdBrowserOpen=true: 1 -> RemoteWebDriver: chrome on linux (7fb131a71359e5f708a036fca1b471ed), null
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Hold browser and proxy open: 1 -> RemoteWebDriver: chrome on linux (7fb131a71359e5f708a036fca1b471ed), null
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Unregister WebDriverInstance[config=StaticConfig,webDriver=RemoteWebDriver: chrome on linux (7fb131a71359e5f708a036fca1b471ed),proxy=null,downloadsFolder=null] in 1 [size=0]
+]]></system-err>
+</testsuite>
