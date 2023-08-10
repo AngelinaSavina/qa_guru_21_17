@@ -18,8 +18,7 @@ public class PracticeFromTest extends TestBase {
         });
 
         step("Fill the registration form", () -> {
-            practiceFormPage
-                    .footerRemove()
+            practiceFormPage.footerRemove()
                     .setFirstName("Angelina")
                     .setLastName("Savina")
                     .setUserEmail("angelinaa@mail.com")
