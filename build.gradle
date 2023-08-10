@@ -1,6 +1,6 @@
 plugins{
     id 'java-library'
-    id "io.qameta.allure" version "2.9.6"
+    id "io.qameta.allure" version "2.11.2"
 }
 
 repositories{
@@ -20,13 +20,6 @@ dependencies{
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
-
-//task qa_guru_20_12(withType(Test)){
-//    useJUnitPlatform()
-//}
-//task qa_guru_20_12(type: Test) {
-//    useJUnitPlatform()
-//}
 test {
     useJUnitPlatform()
 }
