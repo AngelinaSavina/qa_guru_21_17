@@ -5,6 +5,11 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import сom.demoqa.pages.PracticeFormPage;
+import com.github.javafaker.Faker;
+
+import static сom.demoqa.utils.RandomUtils.*;
+
+import java.util.Locale;
 
 import static io.qameta.allure.Allure.step;
 
@@ -16,6 +21,22 @@ public class PracticeFromTest extends TestBase {
     @Test
     void successTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
+        Faker faker = new Faker(new Locale("en"));
+        String
+                firstName = faker.name().firstName(),
+                lastName = faker.name().lastName(),
+                userEmail = faker.internet().emailAddress(),
+                gender = getRandomGender(),
+                number = faker.phoneNumber().subscriberNumber(10),
+                subject = getRandomSubject(),
+                pictureURL = "imageTest.png",
+                address = faker.address().fullAddress(),
+                day = String.format("%02d", faker.number().numberBetween(1, 28)),
+                month = getRandomMonth(),
+                year = String.valueOf(getRandomInt(1960, 2000)),
+                hobbies = getRandomHobby(),
+                state = getRandomState(),
+                city = getRandomCity();
 
         step("Open the page", () -> {
             practiceFormPage.openPage();
@@ -23,33 +44,34 @@ public class PracticeFromTest extends TestBase {
 
         step("Fill the registration form", () -> {
             practiceFormPage.footerRemove()
-                    .setFirstName("Angelina")
-                    .setLastName("Savina")
-                    .setUserEmail("angelinaa@mail.com")
-                    .setGender()
-                    .setNumber("1234567891")
-                    .setDateOfBirth()
-                    .setSubject("ec")
-                    .setHobbie()
-                    .setPicture("imageTest.png")
-                    .setAddress("Cyprus is current address")
-                    .setState()
-                    .setCity()
+                    .setFirstName(firstName)
+                    .setLastName(lastName)
+                    .setUserEmail(userEmail)
+                    .setGender(gender)
+                    .setNumber(number)
+                    .setDateOfBirth(day, month, year)
+                    .setSubject(subject)
+                    .setHobbie(hobbies)
+                    .setPicture(pictureURL)
+                    .setAddress(address)
+                    .setState(state)
+                    .setCity(city)
                     .submit();
         });
 
         step("Verify results on Dialog Window ", () -> {
-            practiceFormPage.verifyModalDialogWindow()
-                    .verifyResult("Student Name", "Angelina Savina")
-                    .verifyResult("Student Email", "angelinaa@mail.com")
-                    .verifyResult("Gender", "Female")
-                    .verifyResult("Mobile", "1234567891")
-                    .verifyResult("Date of Birth", "08 June,1996")
-                    .verifyResult("Subjects", "Economics")
-                    .verifyResult("Hobbies", "Reading")
-                    .verifyResult("Picture", "imageTest.png")
-                    .verifyResult("Address", "Cyprus is current address")
-                    .verifyResult("State and City", "NCR Delhi");
+            practiceFormPage
+                    .verifyModalDialogWindow()
+                    .verifyResult("Student Name", firstName + " " + lastName)
+                    .verifyResult("Student Email", userEmail)
+                    .verifyResult("Gender", gender)
+                    .verifyResult("Mobile", number)
+                    .verifyResult("Date of Birth", day + " " + month + "," + year)
+                    .verifyResult("Subjects", subject)
+                    .verifyResult("Hobbies", hobbies)
+                    .verifyResult("Picture", pictureURL)
+                    .verifyResult("Address", address)
+                    .verifyResult("State and City", state + " " + city);
         });
     }
 }
