@@ -17,7 +17,7 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.remote = System.getProperty("selenoid");
+        Configuration.remote = System.getProperty("selenoidUrl");
         Configuration.baseUrl = System.getProperty("baseUrl", "https://demoqa.com");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
@@ -28,7 +28,7 @@ public class TestBase {
                 "enableVideo", true
         ));
        // Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid") + "/wd/hub";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         Configuration.browserCapabilities = capabilities;
     }
