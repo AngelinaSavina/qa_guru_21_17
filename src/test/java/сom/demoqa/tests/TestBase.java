@@ -27,7 +27,7 @@ public class TestBase {
                 "enableVNC", true,
                 "enableVideo", true
         ));
-        Configuration.remote = "https://user1:1234@" + System.getProperty("remoteDriverUrl") + "/wd/hub";
+        Configuration.remote = "https://user1:1234@" + System.getProperty("selenoid") + "/wd/hub";
         //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         Configuration.browserCapabilities = capabilities;
