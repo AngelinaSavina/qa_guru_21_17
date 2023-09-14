@@ -46,7 +46,7 @@ test {
 }
 
 
-task qa_guru_20_13(type: Test) {
+task qa_guru_20_14(type: Test) {
     useJUnitPlatform {
         includeTags("simple")
     }
