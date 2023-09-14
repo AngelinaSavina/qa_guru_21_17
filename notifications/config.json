@@ -1,0 +1,18 @@
+{
+  "base": {
+    "logo": "",
+    "project": "savina-qa_guru_20_14_jenkins_notifications",
+    "environment": "school",
+    "comment": "comment",
+    "reportLink": "https://jenkins.autotests.cloud/job/qa_guru_21_14/ws/allure-report/widgets/summary.json",
+    "language": "en",
+    "messenger": "telegram",
+    "allureFolder": "build/allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6521907170:AAHAjcVJ0C4Ab8mH-wvIcQix_acxXjtTSEU",
+    "chat": "-1001953557633",
+    "replyTo": ""
+  }
+}
