@@ -1,9 +1,12 @@
 package сom.demoqa.tests;
 
+import com.codeborne.selenide.WebDriverProvider;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
 import сom.demoqa.pages.PracticeFormPage;
 import com.github.javafaker.Faker;
 
@@ -20,6 +23,7 @@ public class PracticeFromTest extends TestBase {
 
     @Test
     void successTest() {
+        WebDriverManager.chromedriver().setup();
         SelenideLogger.addListener("allure", new AllureSelenide());
         Faker faker = new Faker(new Locale("en"));
         String
