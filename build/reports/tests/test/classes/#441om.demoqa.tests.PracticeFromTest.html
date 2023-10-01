@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">22.665s</div>
+<div class="counter">5.740s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">successTest()</td>
-<td class="success">22.665s</td>
+<td class="success">5.740s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,16 +87,29 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=100.0.4896.60 Platform=linux
+<pre>[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.92 (resolved driver for Chrome 117)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/angelinasavina/.cache/selenium/chromedriver/mac-arm64/117.0.5938.92/chromedriver
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /Users/angelinasavina/qa_guru/qa_guru_20_17/build/downloads/1695934773580_79437_1
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 19330
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+Sep 28, 2023 11:59:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 113
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=117.0.5938.92 Platform=mac
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.14.0
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.9.1 build revision: eb2032df7f
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -&gt; RemoteWebDriver: chrome on linux (49bbc97acf3fd25da10a762a3b00158e)
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=RemoteWebDriver: chrome on linux (49bbc97acf3fd25da10a762a3b00158e),proxy=null,downloadsFolder=null] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -&gt; ChromeDriver: chrome on mac (7fa84175848e670f339017855d3ce900)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on mac (7fa84175848e670f339017855d3ce900),proxy=null,downloadsFolder=/Users/angelinasavina/qa_guru/qa_guru_20_17/build/downloads/1695934773580_79437_1] in 1 [size=1]
 [Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
-[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 1 -&gt; RemoteWebDriver: chrome on linux (49bbc97acf3fd25da10a762a3b00158e)...
-[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 1 in 119 ms
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Unregister WebDriverInstance[config=StaticConfig,webDriver=RemoteWebDriver: chrome on linux (null),proxy=null,downloadsFolder=null] in 1 [size=0]
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Deleted empty folder: /Users/angelinasavina/qa_guru/qa_guru_20_17/build/downloads/1695934773580_79437_1
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 1 -&gt; ChromeDriver: chrome on mac (7fa84175848e670f339017855d3ce900)...
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 1 in 110 ms
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Unregister WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on mac (null),proxy=null,downloadsFolder=/Users/angelinasavina/qa_guru/qa_guru_20_17/build/downloads/1695934773580_79437_1] in 1 [size=0]
 </pre>
 </span>
 </div>
@@ -108,7 +121,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 11 Aug 2023, 6:57:42 pm</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 28 Sep 2023, 11:59:39 pm</p>
 </div>
 </div>
 </body>
