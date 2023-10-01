@@ -1,8 +1,8 @@
-package сom.demoqa.pages;
+package com.demoqa.pages;
 
 import com.codeborne.selenide.SelenideElement;
-import сom.demoqa.pages.components.CalendarComponent;
-import сom.demoqa.pages.components.ResultTableComponent;
+import com.demoqa.pages.components.CalendarComponent;
+import com.demoqa.pages.components.ResultTableComponent;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;

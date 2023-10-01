@@ -1,4 +1,4 @@
-package сom.demoqa.configs;
+package com.demoqa.config;
 
 import org.aeonbits.owner.Config;
 
@@ -9,8 +9,8 @@ import org.aeonbits.owner.Config;
 })
 public interface WebDriverConfig extends Config {
     @Key("browser")
-    @DefaultValue("chrome")
-    String browser();
+    @DefaultValue("CHROME")
+    Browser getBrowser();
 
     @Key("browserVersion")
     @DefaultValue("117")
@@ -31,5 +31,6 @@ public interface WebDriverConfig extends Config {
     @Key("browserSize")
     @DefaultValue("1920x1080")
     String browserSize();
+
 
 }

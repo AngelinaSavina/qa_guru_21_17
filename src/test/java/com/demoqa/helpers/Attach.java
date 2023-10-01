@@ -1,4 +1,4 @@
-package сom.demoqa.helpers;
+package com.demoqa.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
